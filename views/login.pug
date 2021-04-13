@@ -1,0 +1,37 @@
+doctype html
+html
+     head
+          title Login Form
+          link(rel="stylesheet"  href="css/style_login.css")
+          link(rel="stylesheet"  href="css/nav.css")
+     
+     body
+         include _header
+         h2 Login Page
+         br
+         .login
+            form.form(for="emailId")
+                label
+                b email
+                br
+                input#email(type="text" name="email" placeholder="Email Id")
+                br 
+                br
+                label
+                b password
+                br
+                input#password(type="Password" name="Password" placeholder="Password")
+                br
+                br
+                input#log(type="submit" name="log" value="Log In Here")
+         include _footer
+         
+     script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js')
+     script(src='/js/login.js')  
+
+
+
+                 
+                
+                 
+     

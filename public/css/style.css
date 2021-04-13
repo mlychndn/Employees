@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Anaheim&display=swap');
+
+
+body{
+  font-family: 'Anaheim', sans-serif;
+ background-color: LightGray;
+ color:black;
+}
+
+.outside{
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+h1{
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+form{
+  /* just to center the form on the page*/
+  margin:0 auto;
+  width:70%;
+  /* to see the limits of the form */
+  padding: 1em;
+  border: 1px solid white;
+}
+
+#survey-form{
+  background-color: white;
+}
+
+fieldset {
+  border:1px solid gray;
+  margin: 20px;
+  padding: 5px;
+ }
+
+ legend{
+   font-weight: 800;
+ }
+
+ div + div {
+  margin-top: 3em;
+  }
+label{
+  font-size: 150%;
+  font-weight: bold;
+  margin: 0.5em;
+
+}
+
+input{
+  margin: 1em;
+  margin-left: 4em;
+  width:600px;
+  height: 35px;
+  border-radius: 15px;
+  font-size: 110%
+}
+
+button {
+  margin: .5em;
+  font-size: 1.5em;
+  text-transform: capitalize;
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 3px;
+}
+
+#submitbutton{
+  display: flex;
+  justify-content: center;
+}
+a{
+  color:white;
+  text-decoration: none;
+}

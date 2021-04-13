@@ -1,0 +1,57 @@
+doctype html
+html(lang="en" dir="ltr")
+     head
+         meta(charset="utf-8")
+         title Registration Form
+         link(rel="stylesheet" href="css/style.css")
+         link(rel="stylesheet" href="css/nav.css")
+     
+     body
+         // including header
+         include _header
+         .outside
+             form(id="survey-form" action="/" method="post")
+                     h1 Employee Registration Form
+                     fieldset
+                         legend Your Details
+                         .input-form
+                             label(for="firstName") name 
+                             br
+                             input#firstName(type="text" name="firstName" placeholder="Enter your firstName")
+                         
+                         .input-form
+                             label(for="lastName") lastName
+                             br
+                             input#lastName(type="text" name="lastName"  placeholder="Enter your lastName")
+                         
+                         .input-form
+                             label(for="email") email
+                             br
+                             input#email(type="email" name="user_email" placeholder='you@example.com')
+                         
+                         .input-form
+                             label(for="organization") Organization
+                             br
+                             input#organization(type="text" name="organization"  placeholder="Enter your Organization name")
+                         
+                         .input-form
+                             label(for="pwd") Password:
+                             br
+                             input(type="password" id="pwd" name="pwd" minlength="8" placeholder='••••••••')
+                         
+                         .input-form
+                             label(for="pwd") passwordConfirm:
+                             br
+                             input#passwordConfirm(type="password"  name="pwd" minlength="8" placeholder='••••••••')
+                     #submitbutton
+                     button(type="submit" id="submit") Register
+                     button(type="button" name="button")
+                         a(href="login") Login  
+         // include footer
+         include _footer
+         script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js')
+         script(src="/js/register.js") 
+         
+   
+     
+
